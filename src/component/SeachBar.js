@@ -6,11 +6,7 @@ class SearchBar extends React.Component {
       <div className="ui loading search">
         <div className="ui icon input">
           <h3 style={{ marginTop: "12px" }}> Car Search </h3>
-          <input
-            className="prompt"
-            type="text"
-            placeholder="Search for a car"
-          />
+          <input className="prompt" type="text" placeholder="Search for car" />
         </div>
         <div className="results"></div>
       </div>
