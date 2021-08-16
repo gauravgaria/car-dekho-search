@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import unsplash from "./api/Unsplash";
 import SearchBar from "./component/SeachBar";
-
+import ImageList from "./component/ImageList";
 class App extends React.Component {
   state = { images: [] };
 
@@ -25,7 +25,7 @@ class App extends React.Component {
       <div className="ui conatiner" style={{ marginTop: "10px" }}>
         <SearchBar onSubmit={this.onSearchSubmit} />
         {/** here onSbumit is just a key:value -> it can be anything onFormSbumit, onSubmitEtc */}
-        Number of images {this.state.images.length}
+        <ImageList images={this.state.images} />
       </div>
     );
   }
